@@ -47,19 +47,19 @@ if(!empty($player_name))
         $last_log_string = '';
         if($timestamp_to_days > 0)
         { 
-             $last_log_string = $timestamp_to_days     . " day" . ($timestamp_to_days > 0 ? 's' : ''); 
+             $last_log_string = $timestamp_to_days     . " day" . ($timestamp_to_days > 1 ? 's' : ''); 
         }
         else if($timestamp_to_hours > 0)
         { 
-             $last_log_string = $timestamp_to_hours    . " hour" . ($timestamp_to_hours > 0 ? 's' : ''); 
+             $last_log_string = $timestamp_to_hours    . " hour" . ($timestamp_to_hours > 1 ? 's' : ''); 
         }
         else if($timestamp_to_min > 0)
         { 
-            $last_log_string = $timestamp_to_min      . " minute" . ($timestamp_to_min > 0 ? 's' : ''); 
+            $last_log_string = $timestamp_to_min      . " minute" . ($timestamp_to_min > 1 ? 's' : ''); 
         }
         else if($timestamp_to_sec > 0)
         { 
-            $last_log_string = $timestamp_to_sec      . " seconds" . ($timestamp_to_sec > 0 ? 's' : ''); 
+            $last_log_string = $timestamp_to_sec      . " seconds" . ($timestamp_to_sec > 1 ? 's' : ''); 
         }
         $last_log_string = $last_log_string . ' ' . 'ago';
 
